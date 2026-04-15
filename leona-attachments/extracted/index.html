@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volt MX Foundry Swagger Documentation</title>
+<style>
+    body {
+        font-family: Myriad Pro;
+        letter-spacing: .7px;
+    }
+    .container {
+        width: 970px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+    .inner-container {
+        -moz-box-shadow: 0 0 5px #888;
+        -webkit-box-shadow: 0 0 5px #888;
+        box-shadow: 0 0 5px #888;
+        border-radius: 6px;
+        padding: 20px 20px 10px 20px;
+        margin-top: 15px;
+    }
+    .left-column {
+        width: 250px;
+        float: left;
+        border-right: 2px solid #eae9ef;
+        margin-right: 15px;
+        height: 478px;
+    }
+    .right-column {
+        display: inline-block;
+        width: calc(100% - 302px);
+    }
+    p, span, h4 {
+        color: #b2b2b2;
+       
+    }
+    .para-heading {
+        font-weight:bold;
+        color: #575e68;
+        font-size: 15px;
+    }
+    .font-size-12 {
+        font-size: 12px;
+    }
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+	.services ul{
+		padding: 15px 0 !important;
+    }
+    .services ul li{
+        color: #b2b2b1;
+        border-bottom: 1px solid #eae9ef;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .services-no-border {
+        border-bottom: none !important;
+    }
+    .active {
+        color: #575e66 !important;
+    }
+    .service-content {
+        background: #f8f9fb;
+        padding: 0 20px;
+        width: 100%;
+        height: 440px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .service-content a {
+        color: #02a1db;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .align-text-center {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .inner-content {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: table;
+        width: 100%;
+    }
+    .pl-20 {
+        padding-left: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <p class="font-size-12 text-uppercase">Documentation for <span class="para-heading text-uppercase">Salesforce for Leap (v1.0)</span></p>
+        <div class="inner-container">
+        <div class="left-column">
+          <div class="services">
+            <ul>
+                <li class="trigger-event identity active">
+                    Identity
+                </li>
+                <li class="trigger-event integration">
+                    Integration/Orchestration
+                </li>
+                <li class="trigger-event objects services-no-border">
+                    Objects
+                </li>
+            </ul>
+                
+          </div>
+          
+        </div>
+        <div class="right-column services">
+            <p class="font-size-12 pl-20 text-uppercase">Service List</p>
+            <div class="service-content">
+                <div class="inner-content">
+            <ul class="identity-content">
+				No services associated with this service type
+            </ul>
+             <ul class="integration-content" style="display:none">
+				<li><a href="SF-Accounts.html">SF-Accounts</a></li>
+<li><a href="SF-MQ-Leona.html">SF-MQ-Leona</a></li>
+            </ul>
+             <ul class="object-content" style="display:none">
+               No services associated with this service type
+            </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              $('.trigger-event').on('click',function(){
+                  $(this).addClass('active').siblings().removeClass('active');
+                if($(this).hasClass("identity")) {
+                    $(".identity-content").show();
+                    $(".integration-content").hide();
+                    $(".object-content").hide();
+                } else if ($(this).hasClass("integration")) {
+                    $(".identity-content").hide();
+                    $(".integration-content").show();
+                    $(".object-content").hide();
+                } else {
+                    $(".identity-content").hide();
+                    $(".integration-content").hide();
+                    $(".object-content").show();
+                }
+              })
+          })
+      </script>
+
+</body>
+</html>

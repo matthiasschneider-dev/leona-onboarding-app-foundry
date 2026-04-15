@@ -1,0 +1,1189 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "SF-MQ-Leona"
+  },
+  "host" : "dsta-dev.demo-hclvoltmx.net/services",
+  "basePath" : "/SF-MQ-Leona",
+  "tags" : [ {
+    "name" : "SF-MQ-Leona",
+    "description" : ""
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/Contact_get" : {
+      "get" : {
+        "tags" : [ "SF-MQ-Leona" ],
+        "summary" : "",
+        "operationId" : "Contact_get",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "$skip",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$top",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$filter",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchid",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$orderby",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchsize",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$select",
+          "in" : "query",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-MQ-Leona_Contactget"
+            }
+          }
+        }
+      }
+    },
+    "/Account_get" : {
+      "get" : {
+        "tags" : [ "SF-MQ-Leona" ],
+        "summary" : "",
+        "operationId" : "Account_get",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "$skip",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$top",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$filter",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchid",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$orderby",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchsize",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$select",
+          "in" : "query",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-MQ-Leona_Accountget"
+            }
+          }
+        }
+      }
+    },
+    "/Account_update" : {
+      "post" : {
+        "tags" : [ "SF-MQ-Leona" ],
+        "summary" : "",
+        "operationId" : "Account_update",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "X-Voltmx-Authorization",
+          "in" : "header",
+          "description" : "This service invocation requires authentication.",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Request_SF-MQ-Leona_Accountupdate"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-MQ-Leona_Accountupdate"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Response_SF-MQ-Leona_Contactget" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "Contact" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Languages__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Email" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MobilePhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Department" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "PhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterRecordId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsDeleted" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "OtherGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsEmailBounced" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "MailingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Birthdate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "OtherStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "CleanStatus" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LeadSource" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "OtherAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Jigsaw" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AssistantPhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmailBouncedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "OtherPhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Description" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AssistantName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Salutation" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Level__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OwnerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastCUUpdateDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "MailingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmailBouncedReason" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "FirstName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Title" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastCURequestDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "HomePhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ReportsToId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastActivityDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawContactId" : {
+                "type" : "string",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Response_SF-MQ-Leona_Accountget" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "Account" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "ShippingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawCompanyId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLA__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NaicsCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Industry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "TickerSymbol" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountSource" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DandbCompanyId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "PhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterRecordId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsDeleted" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "ShippingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DunsNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Sic" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CleanStatus" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "YearStarted" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "CustomerPriority__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SicDesc" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AnnualRevenue" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Jigsaw" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Active__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Site" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Ownership" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Description" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Rating" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Website" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "NumberOfEmployees" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "BillingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OwnerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLASerialNumber__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "Tradestyle" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NumberofLocations__c" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UpsellOpportunity__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ParentId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NaicsDesc" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Type" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLAExpirationDate__c" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastActivityDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Request_SF-MQ-Leona_Accountupdate" : {
+      "type" : "object",
+      "properties" : {
+        "ShippingLatitude" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "BillingCity" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "SLA__c" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "NaicsCode" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Name" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Industry" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "TickerSymbol" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "AccountSource" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "BillingGeocodeAccuracy" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "BillingPostalCode" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "DandbCompanyId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingGeocodeAccuracy" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "DunsNumber" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Sic" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingStreet" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "CleanStatus" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "YearStarted" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingPostalCode" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "CustomerPriority__c" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingState" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "SicDesc" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Id" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "AnnualRevenue" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "BillingState" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Active__c" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Jigsaw" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Site" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Ownership" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Rating" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Website" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "NumberOfEmployees" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "BillingLatitude" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "SLASerialNumber__c" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "OwnerId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "BillingLongitude" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "Tradestyle" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Phone" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "NumberofLocations__c" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "UpsellOpportunity__c" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingCountry" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingCity" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ParentId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "NaicsDesc" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "AccountNumber" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Type" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "BillingCountry" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "SLAExpirationDate__c" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : ""
+        },
+        "BillingStreet" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Fax" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "ShippingLongitude" : {
+          "type" : "integer",
+          "description" : ""
+        }
+      }
+    },
+    "Response_SF-MQ-Leona_Accountupdate" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "Account" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "ShippingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawCompanyId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLA__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NaicsCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Industry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "TickerSymbol" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountSource" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DandbCompanyId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "PhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterRecordId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsDeleted" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "ShippingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DunsNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Sic" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CleanStatus" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "YearStarted" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "CustomerPriority__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SicDesc" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AnnualRevenue" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Jigsaw" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Active__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Site" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Ownership" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Description" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Rating" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Website" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "NumberOfEmployees" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "BillingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OwnerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLASerialNumber__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "Tradestyle" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NumberofLocations__c" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UpsellOpportunity__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ParentId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NaicsDesc" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "AccountNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Type" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLAExpirationDate__c" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastActivityDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

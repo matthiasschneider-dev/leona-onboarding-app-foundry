@@ -1,0 +1,2642 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "SF-Accounts"
+  },
+  "host" : "dsta-dev.demo-hclvoltmx.net/services",
+  "basePath" : "/SF-Accounts",
+  "tags" : [ {
+    "name" : "SF-Accounts",
+    "description" : ""
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/UserLicense_create" : {
+      "post" : {
+        "tags" : [ "SF-Accounts" ],
+        "summary" : "",
+        "operationId" : "UserLicense_create",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "X-Voltmx-Authorization",
+          "in" : "header",
+          "description" : "This service invocation requires authentication.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-Accounts_UserLicensecreate"
+            }
+          }
+        }
+      }
+    },
+    "/Contact_get" : {
+      "get" : {
+        "tags" : [ "SF-Accounts" ],
+        "summary" : "",
+        "operationId" : "Contact_get",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "$skip",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$top",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$filter",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchid",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$orderby",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchsize",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$select",
+          "in" : "query",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-Accounts_Contactget"
+            }
+          }
+        }
+      }
+    },
+    "/User_create" : {
+      "post" : {
+        "tags" : [ "SF-Accounts" ],
+        "summary" : "",
+        "operationId" : "User_create",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Request_SF-Accounts_Usercreate"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-Accounts_Usercreate"
+            }
+          }
+        }
+      }
+    },
+    "/UserLicense_get" : {
+      "post" : {
+        "tags" : [ "SF-Accounts" ],
+        "summary" : "",
+        "operationId" : "UserLicense_get",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Request_SF-Accounts_UserLicenseget"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-Accounts_UserLicenseget"
+            }
+          }
+        }
+      }
+    },
+    "/Account_get" : {
+      "get" : {
+        "tags" : [ "SF-Accounts" ],
+        "summary" : "",
+        "operationId" : "Account_get",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "$skip",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$top",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$filter",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchid",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$orderby",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchsize",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$select",
+          "in" : "query",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-Accounts_Accountget"
+            }
+          }
+        }
+      }
+    },
+    "/User_get" : {
+      "get" : {
+        "tags" : [ "SF-Accounts" ],
+        "summary" : "",
+        "operationId" : "User_get",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "$skip",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$top",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$filter",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchid",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$orderby",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$batchsize",
+          "in" : "query",
+          "required" : false
+        }, {
+          "name" : "$select",
+          "in" : "query",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/Response_SF-Accounts_Userget"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Response_SF-Accounts_Accountget" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "Account" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "ShippingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawCompanyId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLA__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NaicsCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Industry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "TickerSymbol" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountSource" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DandbCompanyId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "PhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterRecordId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsDeleted" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "ShippingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DunsNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Sic" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CleanStatus" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "YearStarted" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "CustomerPriority__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SicDesc" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AnnualRevenue" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Jigsaw" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Active__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Site" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Ownership" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Description" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Rating" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Website" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "NumberOfEmployees" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "BillingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OwnerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLASerialNumber__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "Tradestyle" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NumberofLocations__c" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UpsellOpportunity__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ParentId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "NaicsDesc" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Type" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BillingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SLAExpirationDate__c" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "BillingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastActivityDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ShippingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Response_SF-Accounts_Userget" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "User" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "ProfileId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Address" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LanguageLocaleKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmailPreferencesAutoBccStayInTouch" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "BadgeText" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsProfilePhotoActive" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowMobilePhoneToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Department" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CommunityNickname" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Street" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "FederationIdentifier" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableEndorsementEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsCallCenterAutoLogin" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "StayInTouchSubject" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableSharePostEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Longitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UserPermissionsInteractionUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowStateToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsWorkDotComUserFeature" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableChangeCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesContentEmailAsAndWhen" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "GeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesHideCSNDesktopTask" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Country" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesHideS1BrowserUI" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowPostalCodeToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideEndUserOnboardingAssistantModal" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserType" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowStateToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsJigsawProspectingUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesJigsawListUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ReceivesAdminInfoEmails" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowMobilePhoneToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideSfxWelcomeMat" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "TimeZoneSidKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsSiteforcePublisherUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserRoleId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesCacheDiagnostics" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideCSNGetChatterMobileTask" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ForecastEnabled" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowWorkPhoneToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Division" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesTaskRemindersCheckboxDefault" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastPasswordChangeDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "LocaleSidKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SmallPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowStreetAddressToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "FirstName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowCityToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideChatterOnboardingSplash" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowEmailToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsKnowledgeUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ReceivesInfoEmails" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesShowWorkPhoneToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideSecondChatterOnboardingSplash" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "FullPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DefaultGroupNotificationFrequency" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableProfilePostEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowTitleToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Email" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsMobileUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableLaterCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowPostalCodeToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastLoginDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Latitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UserPreferencesDisableFollowersEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "MobilePhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DigestFrequency" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BannerPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CompanyName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableMessageEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowEmailToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowFaxToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "SenderEmail" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowManagerToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "MediumPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DelegatedApproverId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisCommentAfterLikeEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesDisableFileShareNotificationsForApi" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowStreetAddressToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "City" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsSupportUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsMarketingUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesContentNoEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "EmailPreferencesStayInTouchReminder" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "State" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OfflinePdaTrialExpirationDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesShowTitleToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "EmailPreferencesAutoBcc" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ManagerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawImportLimitOverride" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UserPreferencesShowManagerToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowProfilePicToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "SenderName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsOfflineUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsSFContentUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideLightningMigrationModal" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "IsActive" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesPreviewLightning" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "PostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisMentionsCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesApexPagesDeveloperMode" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ContactId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableAllFeedsEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "StayInTouchSignature" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "StayInTouchNote" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesReminderSoundOff" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesActivityRemindersPopup" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesEventRemindersCheckboxDefault" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsSiteforceContributorUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableLikeEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesLightningExperiencePreferred" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableMentionsPostEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowCountryToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowCityToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesEnableAutoSubForFeeds" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "OfflineTrialExpirationDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "CallCenterId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesPathAssistantCollapsed" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "AboutMe" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmployeeNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Title" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowCountryToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "EmailEncodingKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisProfPostCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Extension" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowFaxToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Username" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Alias" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Signature" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesHideBiggerPhotoCallout" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableBookmarkEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesSortFeedByComment" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Response_SF-Accounts_Usercreate" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "User" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "ProfileId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Address" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LanguageLocaleKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmailPreferencesAutoBccStayInTouch" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "BadgeText" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsProfilePhotoActive" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowMobilePhoneToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Department" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CommunityNickname" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Street" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "FederationIdentifier" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableEndorsementEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsCallCenterAutoLogin" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "StayInTouchSubject" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableSharePostEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Longitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UserPermissionsInteractionUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowStateToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsWorkDotComUserFeature" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableChangeCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesContentEmailAsAndWhen" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "GeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesHideCSNDesktopTask" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Country" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesHideS1BrowserUI" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowPostalCodeToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideEndUserOnboardingAssistantModal" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserType" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowStateToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsJigsawProspectingUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesJigsawListUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ReceivesAdminInfoEmails" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowMobilePhoneToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideSfxWelcomeMat" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "TimeZoneSidKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsSiteforcePublisherUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserRoleId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesCacheDiagnostics" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideCSNGetChatterMobileTask" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ForecastEnabled" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowWorkPhoneToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Division" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesTaskRemindersCheckboxDefault" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastPasswordChangeDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "LocaleSidKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SmallPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowStreetAddressToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "FirstName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowCityToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideChatterOnboardingSplash" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowEmailToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsKnowledgeUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ReceivesInfoEmails" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesShowWorkPhoneToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideSecondChatterOnboardingSplash" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "FullPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DefaultGroupNotificationFrequency" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableProfilePostEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowTitleToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Email" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsMobileUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableLaterCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowPostalCodeToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastLoginDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Latitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UserPreferencesDisableFollowersEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "MobilePhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DigestFrequency" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "BannerPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CompanyName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableMessageEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowEmailToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowFaxToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "SenderEmail" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowManagerToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "MediumPhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "DelegatedApproverId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisCommentAfterLikeEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesDisableFileShareNotificationsForApi" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowStreetAddressToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "City" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsSupportUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsMarketingUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesContentNoEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "EmailPreferencesStayInTouchReminder" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "State" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OfflinePdaTrialExpirationDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesShowTitleToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "EmailPreferencesAutoBcc" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ManagerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawImportLimitOverride" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UserPreferencesShowManagerToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowProfilePicToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "SenderName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPermissionsOfflineUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsSFContentUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesHideLightningMigrationModal" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "IsActive" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesPreviewLightning" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "PostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisMentionsCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UserPreferencesApexPagesDeveloperMode" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "ContactId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableAllFeedsEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "StayInTouchSignature" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "StayInTouchNote" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesReminderSoundOff" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesActivityRemindersPopup" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesEventRemindersCheckboxDefault" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPermissionsSiteforceContributorUser" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisableLikeEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesLightningExperiencePreferred" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableMentionsPostEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowCountryToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesShowCityToGuestUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesEnableAutoSubForFeeds" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "OfflineTrialExpirationDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "CallCenterId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesPathAssistantCollapsed" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "AboutMe" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmployeeNumber" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Title" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowCountryToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "EmailEncodingKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesDisProfPostCommentEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Extension" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesShowFaxToExternalUsers" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Username" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Alias" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Signature" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "UserPreferencesHideBiggerPhotoCallout" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesDisableBookmarkEmail" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "UserPreferencesSortFeedByComment" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Request_SF-Accounts_Usercreate" : {
+      "type" : "object",
+      "properties" : {
+        "ProfileId" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "00e7R000001TsgqTFG"
+        },
+        "LanguageLocaleKey" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "en_US"
+        },
+        "EmailPreferencesAutoBccStayInTouch" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowMobilePhoneToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Department" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "CommunityNickname" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Street" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "FederationIdentifier" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisableEndorsementEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsCallCenterAutoLogin" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "StayInTouchSubject" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisableSharePostEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Longitude" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "UserPermissionsInteractionUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowStateToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsWorkDotComUserFeature" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesDisableChangeCommentEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesContentEmailAsAndWhen" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "GeocodeAccuracy" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesHideCSNDesktopTask" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Country" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesHideS1BrowserUI" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowPostalCodeToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesHideEndUserOnboardingAssistantModal" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowStateToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsJigsawProspectingUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesJigsawListUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "ReceivesAdminInfoEmails" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowMobilePhoneToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesHideSfxWelcomeMat" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "TimeZoneSidKey" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "Europe/Berlin"
+        },
+        "UserPermissionsSiteforcePublisherUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserRoleId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesCacheDiagnostics" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesHideCSNGetChatterMobileTask" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "ForecastEnabled" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowWorkPhoneToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Division" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesTaskRemindersCheckboxDefault" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "LocaleSidKey" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "de_DE_EURO"
+        },
+        "UserPreferencesShowStreetAddressToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "FirstName" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "Max"
+        },
+        "UserPreferencesShowCityToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesHideChatterOnboardingSplash" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowEmailToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsKnowledgeUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "ReceivesInfoEmails" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowWorkPhoneToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesHideSecondChatterOnboardingSplash" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "DefaultGroupNotificationFrequency" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisableProfilePostEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowTitleToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Email" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "mm@mail.com"
+        },
+        "UserPermissionsMobileUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesDisableLaterCommentEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowPostalCodeToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Latitude" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "UserPreferencesDisableFollowersEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "MobilePhone" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "DigestFrequency" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "CompanyName" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "HCL"
+        },
+        "UserPreferencesDisableMessageEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowEmailToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowFaxToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "SenderEmail" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesShowManagerToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "DelegatedApproverId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisCommentAfterLikeEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesDisableFileShareNotificationsForApi" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowStreetAddressToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "City" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPermissionsSupportUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsMarketingUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesContentNoEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "EmailPreferencesStayInTouchReminder" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "State" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesShowTitleToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "EmailPreferencesAutoBcc" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "LastName" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "Muster"
+        },
+        "ManagerId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "JigsawImportLimitOverride" : {
+          "type" : "integer",
+          "description" : ""
+        },
+        "UserPreferencesShowManagerToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowProfilePicToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "SenderName" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPermissionsOfflineUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsSFContentUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesHideLightningMigrationModal" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "IsActive" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesPreviewLightning" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "PostalCode" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisMentionsCommentEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesApexPagesDeveloperMode" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "ContactId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisableAllFeedsEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "StayInTouchSignature" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "StayInTouchNote" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesReminderSoundOff" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesActivityRemindersPopup" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesEventRemindersCheckboxDefault" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPermissionsSiteforceContributorUser" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Phone" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesDisableLikeEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesLightningExperiencePreferred" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesDisableMentionsPostEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowCountryToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesShowCityToGuestUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesEnableAutoSubForFeeds" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "CallCenterId" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesPathAssistantCollapsed" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "AboutMe" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "EmployeeNumber" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "Title" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesShowCountryToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "EmailEncodingKey" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "UTF-8"
+        },
+        "UserPreferencesDisProfPostCommentEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Extension" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesShowFaxToExternalUsers" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Username" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "mm@mail.com"
+        },
+        "Alias" : {
+          "type" : "string",
+          "description" : "",
+          "default" : "MMuster"
+        },
+        "Signature" : {
+          "type" : "string",
+          "description" : ""
+        },
+        "UserPreferencesHideBiggerPhotoCallout" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesDisableBookmarkEmail" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "UserPreferencesSortFeedByComment" : {
+          "type" : "boolean",
+          "description" : ""
+        },
+        "Fax" : {
+          "type" : "string",
+          "description" : ""
+        }
+      }
+    },
+    "Response_SF-Accounts_UserLicensecreate" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "UserLicense" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "Status" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "TotalLicenses" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "UsedLicenses" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LicenseDefinitionKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterLabel" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Response_SF-Accounts_UserLicenseget" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "UserLicense" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "Status" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "TotalLicenses" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "UsedLicenses" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LicenseDefinitionKey" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterLabel" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Request_SF-Accounts_UserLicenseget" : {
+      "type" : "object"
+    },
+    "Response_SF-Accounts_Contactget" : {
+      "type" : "object",
+      "properties" : {
+        "opstatus" : {
+          "type" : "integer"
+        },
+        "httpStatusCode" : {
+          "type" : "integer"
+        },
+        "Contact" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "LastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Languages__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AccountId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Email" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MobilePhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Name" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Department" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "CreatedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "PhotoUrl" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MasterRecordId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsDeleted" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "OtherGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "IsEmailBounced" : {
+                "type" : "boolean",
+                "description" : ""
+              },
+              "LastViewedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "MailingCity" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Birthdate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "OtherStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherLatitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "CleanStatus" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LeadSource" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "CreatedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "OtherAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Id" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingStreet" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Jigsaw" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AssistantPhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmailBouncedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "OtherPhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Description" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "AssistantName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastReferencedDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Salutation" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingState" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Level__c" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OwnerId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingLongitude" : {
+                "type" : "integer",
+                "description" : ""
+              },
+              "Phone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherCountry" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastCUUpdateDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "MailingGeocodeAccuracy" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "EmailBouncedReason" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "FirstName" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "OtherPostalCode" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "Title" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "MailingAddress" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastCURequestDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "SystemModstamp" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "HomePhone" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "ReportsToId" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastActivityDate" : {
+                "type" : "string",
+                "format" : "date-time",
+                "description" : ""
+              },
+              "Fax" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "LastModifiedById" : {
+                "type" : "string",
+                "description" : ""
+              },
+              "JigsawContactId" : {
+                "type" : "string",
+                "description" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
